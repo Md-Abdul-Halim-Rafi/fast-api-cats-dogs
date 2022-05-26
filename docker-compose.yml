@@ -1,0 +1,12 @@
+version: "3.1"
+
+services:
+  cats_dogs_api:
+    container_name: cats_dogs_api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app/
+    ports:
+      - 8080:8080
